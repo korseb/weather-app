@@ -1,0 +1,95 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+body {
+    background: linear-gradient(135deg, #00feba, #5b548a);
+    height:100vh;
+}
+
+label {
+    font-size: 25px;
+    margin-right: 20px;
+}
+
+.container {
+    max-width: 480px;
+    background: linear-gradient(135deg, #00feba, #5b548a);
+    color: white;
+    margin: 40px auto 0;
+    border-radius: 20px;
+    padding: 40px 30px;
+    text-align: center;
+}
+
+.options {
+    border: none;
+    outline: none;
+    background: white;
+    color: grey;
+    height: 60px;
+    padding: 10px;
+    border-radius: 10px;
+    margin-right: 16px;
+    font-size: 18px;
+    cursor: pointer;
+    text-align: center
+}
+
+.search {
+    border: none;
+    outline: none;
+    background: white;
+    border-radius: 10px;
+    height: 60px;
+    width: 100px;
+    color: grey;
+    height: 60px;
+    font-size: 18px;
+    cursor: pointer;
+    text-align: center
+}
+
+.temp {
+    font-size: 40px;
+}
+
+.details {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+    margin-top: 50px;
+    font-size: 16px;
+}
+
+.weather {
+    margin-top: 20px;
+    display: none;
+}
+
+.error {
+    display: none;
+    margin-top: 20px;
+    font-size: 18px;
+}
+
+@media (max-width: 500px) {
+
+    .details,
+    .label,
+    .options,
+    .search {
+        display: block;
+        margin: 10px auto; 
+    }
+
+    .pressure ,
+    .date,
+    .rainfall {
+        margin-bottom: 15px;
+    }
+}

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Aplikacja pogodowa</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+   <div class="container">
+     <form>
+      <label class="label">Miasto:</label>
+      <select class="options">
+        <option value="" selected hidden disabled ></option>
+        <option value="kielce">Kielce</option>
+        <option value="krakow">Kraków</option>
+        <option value="lublin">Lublin</option>
+      </select>
+      <input class="search" type="button" value="Szukaj">
+     </form>
+      <div class="error">
+      <p>Wybierz miasto</p>
+      </div>
+      <div class="weather">
+        <img src="images/clear.png">
+        <h1 class="city">Warszawa</h1>
+        <h2 class="temp">22°C</h2>
+        <div class="details">
+              <div>
+                  <p>Dzień pomiaru:</p>
+                  <p class="date">2023.08.01</p>
+              </div>
+              <div>
+                  <p>Ciśnienie:</p>
+                  <p class="pressure">12 hPa</p>
+              </div>
+              <div>
+                <p>Suma opadu:</p>
+                <p class="rainfall">1 mm</p>
+              </div>
+        </div>
+      </div>
+   </div>
+  <script src="script.js"></script>
+</body>
+</html>
